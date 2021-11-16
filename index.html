@@ -1,0 +1,533 @@
+<!doctype html>
+<html class="no-js" lang="FR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Depences </title>
+    <meta name="description" content="Plien de Choses :) ">
+
+
+    <!-- Lien googles Fonte !! -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in th ide root directory -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+
+
+  <div id="start">
+
+        <div class="jumbotron jumbotron-fluid text-white bg-dark">
+            <div class="container">
+                <h1 class="display-3">Dépences et comptes </h1>
+                <p class="lead"></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="annee" class="flex"  >
+        <div class="card text-white bg-dark mb-3 d-inline-block" style="min-width: 20rem;">
+            <div class="card-header">Anneé </div>
+            <div class="card-body">
+                <form class="form-inline p-2 my-2 my-lg-0">
+                    <select id="choixStrart" class="custom-select  ">
+                        <option selected>2021</option>
+                        <option>2022 </option>
+                    </select>
+                </form>
+                </form>
+            </div>
+            <div class="card-footer text-white bg-dark">
+                <button class="btn  btn-outline-light my-2 my-sm-0" onclick="startUn()" type="submit">Afiicher</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Moi 21 -->
+
+    <div id="moi21" class="flex" >
+        <div  class="card text-white bg-dark mb-3 d-inline-block" style="min-width: 20rem;">
+            <div class="card-header"> Moi 2021 </div>
+            <div class="card-body">
+                <form class="form-inline p-2 my-2 my-lg-0">
+                    <select id="choixstrartdeux" class="custom-select  ">
+                       
+                        
+                        <option selected >Novembre 2021 </option>
+                        <option>Décembre 2021</option>
+                    </select>
+                </form>
+                </form>
+            </div>
+            <div class="card-footer text-white bg-dark">
+                <button class="btn  btn-outline-light my-2 my-sm-0" onclick="startdeux()"
+                    type="submit">Afiicher</button>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+    <!-- Moi 2022-->
+
+    <div id="moi22" class="flex">
+
+        <div   class="card text-white bg-dark mb-3 d-inline-block" style="min-width: 20rem;">
+            <div class="card-header"> Moi 2022 </div>
+            <div class="card-body">
+                <form class="form-inline p-2 my-2 my-lg-0">
+                    <select id="choixstrartdeux" class="custom-select  ">
+                       
+                      <option >Janvier </option>
+                      <option >Février</option>
+                      <option >Mars  </option>
+                      <option >Avril </option>
+                      <option >mai </option>
+                      <option >Juin </option>
+                      <option >Juillet  </option>
+                      <option >Aout </option>
+                      <option >Septembre </option>
+                      <option >Octobre </option>
+                       <option >Novembre  </option>
+                      <option >Décembre </option>
+                    </select>
+                </form>
+                </form>
+            </div>
+            <div class="card-footer text-white bg-dark">
+            <button class="btn  btn-outline-light my-2 my-sm-0" onclick="starttrois()" type="submit">Afiicher</button>
+        </div>
+        
+
+    </div>
+    </div>
+
+    <div id="nov21">
+
+      
+
+        <script>
+          caf = 658;
+    
+          majNovembre2021 = "16/11/21"
+          FactureNameNovembre21 = [
+            B = "Bouygues",
+            A = " Assurances",
+            C = "Loyer",
+            D = "Internet",
+            F = "Coverd",
+            g = "Edf",
+            h = "Eau",
+            i = "Iphone 2/4"
+    
+    
+          ]
+    
+          AchatNovembre2021Name = [
+    
+            B = "",
+            
+    
+          ]
+    
+          AchatNovembre2021Motant = [
+    
+            B = 0,
+            
+    
+          ]
+          AchatNovembre2021Date = [
+    
+            B = 0,
+           
+    
+          ]
+    
+          // Facture menseul 
+          FactureDepNovembre21 = [
+            Bouygues = 16.99,
+            Assurance = 20,
+            Loyer = 0,
+            Free = 0,
+            Coverd = 8.90,
+            Edf = 0,
+            Sport = 0,
+            Iphone = 150,
+    
+    
+    
+          ]
+    
+          FactureDateNovembre21 = [
+            Bouygues = 10,
+            Assurance = 08,
+            Loyer = 10,
+            Free = "N/A",
+            Coverd = 08,
+            Edf = 12,
+            Sport = "N/A",
+            Iphone = 28,
+          ]
+    
+    
+          
+    
+    
+    
+    
+          TotalFactureNovembre2021 = FactureDepNovembre21[0] + FactureDepNovembre21[1] + FactureDepNovembre21[2] +
+            FactureDepNovembre21[3] + FactureDepNovembre21[4] +
+            FactureDepNovembre21[5] + FactureDepNovembre21[6] + FactureDepNovembre21[7] 
+    
+          
+        </script>
+    
+        <script>
+            TotalNovembre2021 = 0 ; 
+            for (i = 0; i < AchatNovembre2021Motant.length; i++) {
+    
+              TotalNovembre2021 += Math.round(AchatNovembre2021Motant[i] * 1) / 1;
+    
+            
+            }
+            TotalNovembre2021Caf =caf- TotalNovembre2021 - TotalFactureNovembre2021
+        </script>
+    
+    
+        <div id="Novembre2021" class="top">
+          <div class="alert fixed-top alert-primary" role="alert">
+            <strong>Date de mis à jours</strong> <script>document.write(majNovembre2021)</script>
+        </div>
+    
+          <ul class="flex">
+            <li>
+              <div class="card text-white bg-dark mb-3 d-inline-block" style="min-width: 20rem;">
+                <div class="card-header  center">Facture
+                </div>
+                <div class="card-body center">
+                  <script>
+                    document.write('<span class="display-3 text-danger font-weight-bold"> -' + TotalFactureNovembre2021.toFixed(2) + '</span> €');
+                  </script>
+                </div>
+                <div class="card-footer center">
+                  <button data-toggle="modal" data-target="#Novembre21" type="button"
+                    class="btn btn-warning">Afficher</button>
+                </div>
+                
+              </div>
+    
+            </li>
+    
+            <li>
+              <div class="card text-white bg-dark mb-3 d-inline-block" style="min-width: 20rem;">
+                <div class="card-header  center">
+                 Revenu
+                </div>
+                <div class="card-body center">
+                  <script>
+                    document.write('<span class="display-3 text-success font-weight-bold ">+' + caf.toFixed(2) + '</span> €');
+                  </script>
+                </div>
+                <div class="card-footer center">
+                  <button type="button" class="btn btn-secondary">Afficher</button>
+                </div>
+    
+              </div>
+        
+        </li>
+    
+        <li>
+          <div class="card text-white bg-dark mb-3 d-inline-block" style="min-width: 20rem;">
+            <div class="card-header  center">
+              Total
+            </div>
+            <div class="card-body center">
+              <script>
+                document.write('<span class="display-3 font-weight-bold text-warning ">' + TotalNovembre2021Caf  + '</span> €');
+              </script>
+            </div>
+            <div class="card-footer center">
+              <button type="button" data-toggle="modal" data-target="#TotalDepensesNovembre2021" class="btn btn-warning">Afficher</button>
+            </div>
+    
+    
+          </div>
+    
+        </li>
+    
+    
+    
+    
+        </ul>
+        </div>
+    
+    
+        <div class="flex center">
+          <div class="card text-white bg-dark mb-3 d-inline-block" style="min-width: 50%;">
+            <div class="card-header">Calcule Rapide</div>
+            <div class="card-body">
+              <h4 class="card-title">Reste Facture déduite Novembre </h4>
+              <form>
+                <div class="form-group center">
+                  <label for="formGroupExampleInput">Nom de la Dépenses</label>
+                  <input id="NameFac2021" type="text" required="required" class="form-control center" id="formGroupExampleInput" placeholder="Carffour, Auchant ...">
+                  <label for="formGroupExampleInput">Motant de la Dépenses</label>
+                  <input id="DepNovembre2021" type="number" required="required" class="form-control center" id="formGroupExampleInput" placeholder="€">
+                </div>
+            </div>
+            <div class="card-footer center">
+              <button type="form" onclick="CalculeNovembre2021Chiffre()" data-toggle="modal" data-target="#DepencesNovembre2021" class="btn btn-warning">Afficher</button>
+            </div>
+          </div>
+    
+        </div>
+    
+    
+    
+    
+    
+        <!-- ==============================================================================
+        
+                                MODIAL Facture NOVEMBRE 2021
+        
+        -->
+    
+        <div class="modal" id="Novembre21" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header text-white bg-dark">
+                <h5 class="modal-title" id="exampleModalCenteredLabel">Facture Novembre 2021</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <script>
+                  document.write('<table class="table center">');
+                  document.write('<thead class="thead-dark">');
+                  document.write(' <tr>');
+                  document.write('<th>Organisme</th>');
+                  document.write('<th>Motant Facture </th>');
+                  document.write('<th> Jour de Prélévement </th>');
+                  document.write('</tr>');
+                  document.write('  </thead>');
+                  document.write(' <tbody>');
+                  for (i = 0; i < FactureDepNovembre21.length; i++) {
+                    document.write(' <tr > <th scope="row"> ' + FactureNameNovembre21[i] + '  </th>')
+                    document.write('<td> <p class="badge badge-danger">' + FactureDepNovembre21[i] + '</p>')
+                    document.write('<td> <p class="badge badge-warning">' + FactureDateNovembre21[i] + '</p> </td>')
+    
+    
+    
+                  }
+                  document.write('</tr>')
+                  document.write(' </tbody>');
+                  document.write("</table>");
+                </script>
+              </div>
+              <div class="modal-footer text-white bg-dark">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+    
+    
+    
+        <script>
+          selectElmtchoixStart = document.getElementById("choixStrart");
+          nameFacturenovembre2021=""
+          choixCalculeNovembre2021 = ""
+          result = ""
+    
+          function CalculeNovembre2021Chiffre() {
+            
+            nameFacturenovembre2021= document.getElementById("NameFac2021").value
+            choixCalculeNovembre2021 = document.getElementById("DepNovembre2021").value
+    
+            document.getElementById("name").innerHTML=nameFacturenovembre2021
+            document.getElementById("motant").innerHTML=choixCalculeNovembre2021
+    
+           result= caf -choixCalculeNovembre2021-TotalFactureNovembre2021;
+    
+           document.getElementById("result2021").innerHTML=result
+            
+          }
+        </script>
+    
+    
+    <div class="modal" id="DepencesNovembre2021" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-white bg-dark">
+            <h5 class="modal-title" id="exampleModalCenteredLabel">Facture Depenses</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th>#</th>
+                  <th> Magasin</th>
+                  <th>Motant</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"></th>
+                  <td> <h1 style="width: 100%; font-size: 20px;" class="badge badge-info" id="name"></h1></td>
+                  <td> <h1 style="width: 100%; font-size: 20px;" class="badge badge-danger" id="motant"></h1></td>
+                </tr>
+                   
+            </table>
+    
+            <div class="flex">
+              <div class="card text-white bg-dark mb-3 d-inline-block" style="width: 100%;">
+                <div class="card-header">Resulta</div>
+                <div class="card-body">
+                 <h1 class="center"> Total restant <span class="badge badge-danger" id="result2021">€</span></h1>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="alert alert-danger" role="alert">
+              <strong>ATTENTION</strong> Pour que tout fonction envois moi chauque dépenses scren par mail  <a href="mailto:doliprane592370@gmail.com?subject=ScrenCompte&body=" title="" >en cliquant ici</a>
+            </div>
+            
+    
+           
+          
+          </div>
+          <div class="modal-footer text-white bg-dark ">
+            <button type="button" class="btn btn-secondary" style="width: 100%;" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="modal" id="TotalDepensesNovembre2021" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-white bg-dark ">
+            <h5 class="modal-title" id="exampleModalCenteredLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <script>
+              document.write('<table class="table center">');
+              document.write('<thead class="thead-dark">');
+              document.write(' <tr>');
+              document.write('<th>Organisme</th>');
+              document.write('<th>Motant  </th>');
+              document.write('<th> Date </th>');
+              document.write('</tr>');
+              document.write('  </thead>');
+              document.write(' <tbody>');
+              for (i = 0; i < AchatNovembre2021Name.length; i++) {
+                document.write(' <tr > <th scope="row"> ' + AchatNovembre2021Name[i] + '  </th>')
+                document.write('<td> <p class="badge badge-danger">-' + AchatNovembre2021Motant[i] + '</p>')
+                document.write('<td> <p>' + AchatNovembre2021Date[i] + '</p> </td>')
+    
+    
+    
+              }
+              document.write('</tr>')
+              document.write(' </tbody>');
+              document.write("</table>");
+            </script>
+          </div>
+          <div class="modal-footer text-white bg-dark ">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+    </div>
+    
+        <!--  =======================================================================================================
+        ============================ Fin Novembre 2021 ============================================================-->
+    
+    
+
+
+    
+
+
+   
+  
+
+
+
+        
+  
+
+
+    
+       
+
+    
+
+    
+
+      
+
+
+
+
+  
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
+
+
+
+
+
+<script src="js/main.js "></script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+</script>
