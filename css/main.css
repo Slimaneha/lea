@@ -97,9 +97,11 @@ textarea {
 /* Basic */
 
 
+
 .flex {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap !important;
     
 }
 
@@ -126,7 +128,7 @@ form {
     text-align: center !important;
 }
 
-#moi21 ,#moi22 ,#nov21 {
+#moi21 ,#moi22 ,#nov21,#dec21 {
              display: none ;
 }
 

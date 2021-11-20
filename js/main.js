@@ -57,9 +57,10 @@ function startdeux() {
 
 
     if (choixdeux == moi2111 ) {
-        alert("nov2021")
+        
         document.getElementById("nov21").style.display="block"
         document.getElementById("moi21").style.display = "none"
+
 
 
     }
@@ -67,6 +68,7 @@ function startdeux() {
     else if (choixdeux == moi2112)
     {
           document.getElementById("nov21").style.display="none"
+          document.getElementById("dec21").style.display="block"
         
     }
 
